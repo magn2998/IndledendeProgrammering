@@ -119,7 +119,7 @@ public class Aflevering1_Sem1 {
 			int hits = throwBuffonsNeedle(loop);
 			System.out.println( loop + " / " + hits + " = " + ((double)loop / hits));
 		} else {
-			System.out.println("NOT A NUMBER");
+			System.out.println("Please provide a positive integer");
 		}
 	}
 	
@@ -127,9 +127,9 @@ public class Aflevering1_Sem1 {
 		Random rnd = new Random();
 		int amountHit = 0;
 		for(int i = 0; i < loops; i++) {
-			Double pos1 = rnd.nextDouble()*2;
-			Double angle = rnd.nextDouble() * Math.PI;
-			Double pos2 = Math.sin(angle) + pos1;
+			Double needle_start = rnd.nextDouble()*2;
+			Double needle_angle = rnd.nextDouble() * Math.PI;
+			Double needle_end   = Math.sin(angle) + pos1;
 			if(pos2 >=  2) {
 				amountHit++;
 			}
