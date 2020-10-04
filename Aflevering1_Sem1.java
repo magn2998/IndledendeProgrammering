@@ -127,10 +127,10 @@ public class Aflevering1_Sem1 {
 		Random rnd = new Random();
 		int amountHit = 0;
 		for(int i = 0; i < loops; i++) {
-			Double needle_Start = rnd.nextDouble()*2;
-			Double needle_Angle = rnd.nextDouble() * Math.PI;
-			Double needle_End   = Math.sin(needle_Angle) + needle_Start;
-			if(needle_End >=  2) {
+			Double needleStart = rnd.nextDouble()*2;
+			Double needleAngle = rnd.nextDouble() * Math.PI;
+			Double needleEnd   = Math.sin(needleStart) + needleStart;
+			if(needleEnd >=  2) {
 				amountHit++;
 			}
 		}
