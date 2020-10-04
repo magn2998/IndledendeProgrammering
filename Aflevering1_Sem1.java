@@ -129,8 +129,8 @@ public class Aflevering1_Sem1 {
 		for(int i = 0; i < loops; i++) {
 			Double needle_start = rnd.nextDouble()*2;
 			Double needle_angle = rnd.nextDouble() * Math.PI;
-			Double needle_end   = Math.sin(angle) + pos1;
-			if(pos2 >=  2) {
+			Double needle_end   = Math.sin(needle_angle) + needle_start;
+			if(needle_end >=  2) {
 				amountHit++;
 			}
 		}
